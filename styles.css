@@ -1,0 +1,151 @@
+body {
+    background: #F3EAE3;
+    font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./assets/Montserrat/Montserrat-VariableFont_wght.ttf')
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url('./assets/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf')
+}
+
+@font-face {
+    font-family: "Fraunces Bold";
+    src: url('./assets/Fraunces/Fraunces_9pt_Soft-Bold.ttf')
+}
+
+#card {
+    position: relative;
+    top: 200px;
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+#product-pic {
+    width: 55%;
+    height: 100%;
+    margin: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: url('./images/image-product-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#description {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+h1 {
+    font-family: 'Fraunces Bold', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 30px;
+    margin-left: 0;
+    font-size: 30px;
+}
+
+#type {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+#description-text {
+    line-height: 25px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+#price { position: relative; margin: 20px 0}
+
+#principal-price {
+    font-size: 30px;
+    font-family: 'Fraunces', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3D8269;
+}
+
+#secondary-price {
+    position: absolute;
+    text-decoration: line-through;
+    margin-left: 20px;
+    top: 6px;
+}
+
+#action {
+    background: #3D8269;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    color: white;
+}
+
+#action:hover {
+    background: #1A4031;
+}
+
+@media (max-width: 375px) {
+    #card {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #product-pic {
+        width: 100%;
+        background-image: url('./images/image-product-mobile.jpg');
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #description {
+        width: 100%;
+        margin: 0;
+        background: white;
+    }
+
+    h1 {
+        margin: 20px auto;
+        padding: 0 30px;
+    }
+
+    #type {
+        padding: 0 30px;
+    }
+
+    #description-text {
+        margin: auto;
+        padding: 0 30px;
+    }
+
+    #price {
+        padding: 0 30px;
+    }
+
+    #action {
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 30px;
+        margin-bottom: 20px;
+    }
+
+}
